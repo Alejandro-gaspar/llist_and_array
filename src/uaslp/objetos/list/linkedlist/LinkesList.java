@@ -1,5 +1,5 @@
 package uaslp.objetos.list.linkedlist;
-public class LinkesList {
+public class LinkesList implements List {
    private Node head;
    private Node tail;
     private int size;
@@ -10,7 +10,7 @@ public class LinkesList {
      node.previous=tail;
      if (head == null) {
       head=node;
-      tail=node;
+      tail =node;
      }else{
       tail.next=node;
      }
@@ -30,20 +30,26 @@ public class LinkesList {
      }
     }
     public void remove(int index) {
-     Node aux=head;
-     int cont = 1;
-     do {
-      aux=aux.next;
-      cont++;
-     } while (aux != tail && cont!=index);
-     if(cont==index){
-      aux.previous.next=aux.next;
-      aux.next.previous=aux.previous;
-      aux.next=aux.previous=null;
-      Runtime garbage = Runtime.getRuntime();
-      garbage.gc();
-     }else{
-      System.out.println("index no valido");
+     Node aux = new Node();
+     Node ant = new Node();
+     int cont=1;
+     aux = head;
+     if (head != null) {
+      while (aux != tail && cont != index) {
+       ant=aux;
+       aux = aux.next;
+       cont++;
+      }
+      if (cont== index) {
+       if (aux == head) {
+        head = aux.next;
+       } else {
+        ant.next= aux.next;
+        aux.next.previous = ant;
+        aux.next = aux.previous = null;
+        System.out.println("dato:" + aux.data + " removido");
+       }
+      }
      }
     }
     public void removeAll(){
@@ -52,56 +58,65 @@ head=tail=null;
      garbage.gc();
     }
     public void setat(int index,String data){
-     Node aux=head;
+     Node aux=new Node();
+     aux=head;
      int cont = 1;
-     do {
-      aux=aux.next;
-      cont++;
-     } while (aux != tail && cont!=index);
-     if(cont==index){
-      aux.data=data;
+     if(head!=null) {
+      while (aux != tail && cont!=index) {
+       aux = aux.next;
+       cont++;
+      }
+      if(cont==index){
+       aux.data=data;
+      }else System.out.println("index no valido");
      }else{
-      System.out.println("index no valido");
       addAtTails(data);
       System.out.println("dato insertado al final");
      }
     }
     public String getat(int index){
-     Node aux=head;
      String dat=null;
+    if(head!=null){
+     Node aux= new Node();
+     aux=head;
      int cont = 1;
-     do {
+     while (aux != tail && cont!=index){
       aux=aux.next;
       cont++;
-     } while (aux != tail && cont!=index);
-     if(cont==index) dat = aux.data;
-
+     }
+     if(cont==index) {
+      dat = aux.data;
+      System.out.println("dato:"+dat+" encontrado");
+     }
+    }
      return dat;
     }
-    public void removeallwithvalue(String data){
-     Node aux=head;
-     do {
-      aux=aux.next;
-     } while (aux != tail && data.compareTo(aux.data)!=0);
-     if(data.compareTo(aux.data)==0){
-      System.out.println("dato:"+data+" encontrado");
-      if(aux==head) {
-       head=aux.next;
-      }else{
-       aux.previous.next=aux.next;
-       aux.next.previous=aux.previous;
-       aux.next=aux.previous=null;
-       Runtime garbage = Runtime.getRuntime();
-       garbage.gc();
+    public void removeallwithvalue(String data) {
+     Node aux = new Node();
+     Node ant = new Node();
+     aux = head;
+     if (head != null) {
+      while (aux != tail && data.compareTo(aux.data) != 0) {
+       ant = aux;
+       aux = aux.next;
       }
-      System.out.println("dato:"+data+" removido");
+      if (data.compareTo(aux.data) == 0) {
+       System.out.println("dato:" + data + " encontrado");
+       if (aux == head) {
+        head = aux.next;
+       } else {
+        ant.next = aux.next;
+        aux.next.previous = ant;
+        aux.next = aux.previous = null;
+        System.out.println("dato:" + aux.data + " removido");
+       }
+      }
      }
     }
     public int getSize(){
      return size;
     }
-    public LinkedListIterador getIterador(){
-
+    public Iterator getIterador(){
      return new LinkedListIterador(head);
     }
 

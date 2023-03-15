@@ -1,6 +1,8 @@
 package uaslp.objetos.array.arraylist;
 
-public class arraylist {
+import uaslp.objetos.list.linkedlist.List;
+
+public class arraylist implements List {
     private static  final int Valor_ini =2;
     private String []array;
     private int size;
@@ -55,7 +57,10 @@ size=0;
         array=newarray;
     }
     public arraylistIterador getIterador(){
-        return new arraylistIterador(array);
+        return new arraylistIterador(this);
+    }
+    public void removeallwithvalue(String data) {
+
     }
 
 }
