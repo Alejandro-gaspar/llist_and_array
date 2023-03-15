@@ -2,15 +2,15 @@ package uaslp.objetos.array.arraylist;
 
 import uaslp.objetos.list.linkedlist.Iterator;
 
-public class arraylistIterador implements Iterator {
+public class arraylistIterador<T> implements Iterator<T> {
 public int currentindex;
-private final arraylist list;
+private final arraylist<T> list;
 
-arraylistIterador(arraylist list){
+arraylistIterador(arraylist<T> list){
     this.list=list;
     currentindex=0;
 }
-arraylistIterador(arraylist list,int index) {
+arraylistIterador(arraylist<T> list,int index) {
     this.list = list;
     currentindex = index;
 }
@@ -20,8 +20,8 @@ arraylistIterador(arraylist list,int index) {
         return currentindex <list.getSize();
     }
 
-    public String next(){
-    String data=list.getat(currentindex);
+    public T next(){
+    T data=list.getat(currentindex);
     currentindex++;
     return data;
     }

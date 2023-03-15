@@ -1,11 +1,11 @@
 package uaslp.objetos.list.linkedlist;
-public class LinkesList implements List {
-   private Node head;
-   private Node tail;
+public class LinkesList<T> implements List<T> {
+   private Node<T> head;
+   private Node<T> tail;
     private int size;
     int index;
-    public void addAtTails(String data){
-     Node node=new Node();
+    public void addAtTails(T data){
+     Node<T> node=new Node();
      node.data=data;
      node.previous=tail;
      if (head == null) {
@@ -17,8 +17,8 @@ public class LinkesList implements List {
      tail=node;
      size++;
     }
-    public void addAtFront(String data){
-     Node node=new Node();
+    public void addAtFront(T data){
+     Node<T> node=new Node();
      node.data=data;
      node.previous=null;
      if(head==null){
@@ -30,8 +30,8 @@ public class LinkesList implements List {
      }
     }
     public void remove(int index) {
-     Node aux = new Node();
-     Node ant = new Node();
+     Node<T> aux = new Node();
+     Node<T> ant = new Node();
      int cont=1;
      aux = head;
      if (head != null) {
@@ -57,8 +57,8 @@ head=tail=null;
      Runtime garbage = Runtime.getRuntime();
      garbage.gc();
     }
-    public void setat(int index,String data){
-     Node aux=new Node();
+    public void setat(int index,T data){
+     Node<T> aux=new Node();
      aux=head;
      int cont = 1;
      if(head!=null) {
@@ -74,10 +74,10 @@ head=tail=null;
       System.out.println("dato insertado al final");
      }
     }
-    public String getat(int index){
-     String dat=null;
+    public T getat(int index){
+     T dat=null;
     if(head!=null){
-     Node aux= new Node();
+     Node<T> aux= new Node();
      aux=head;
      int cont = 1;
      while (aux != tail && cont!=index){
@@ -91,16 +91,16 @@ head=tail=null;
     }
      return dat;
     }
-    public void removeallwithvalue(String data) {
-     Node aux = new Node();
-     Node ant = new Node();
+    public void removeallwithvalue(T data) {
+     Node<T> aux = new Node();
+     Node<T> ant = new Node();
      aux = head;
      if (head != null) {
-      while (aux != tail && data.compareTo(aux.data) != 0) {
+      while (aux != tail && data==aux.data) {
        ant = aux;
        aux = aux.next;
       }
-      if (data.compareTo(aux.data) == 0) {
+      if (data==aux.data) {
        System.out.println("dato:" + data + " encontrado");
        if (aux == head) {
         head = aux.next;
@@ -116,8 +116,8 @@ head=tail=null;
     public int getSize(){
      return size;
     }
-    public Iterator getIterador(){
-     return new LinkedListIterador(head);
+    public Iterator<T> getIterador(){
+     return new LinkedListIterador<>(head);
     }
 
 }

@@ -5,15 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="406c22a3-ee1d-4c56-a976-cd30967a01f3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/uaslp/objetos/list/linkedlist/Navigable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uaslp/objetos/array/arraylist/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uaslp/objetos/array/arraylist/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/uaslp/objetos/array/arraylist/arraylist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uaslp/objetos/array/arraylist/arraylist.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/uaslp/objetos/array/arraylist/arraylistIterador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uaslp/objetos/array/arraylist/arraylistIterador.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/uaslp/objetos/list/linkedlist/Iterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uaslp/objetos/list/linkedlist/Iterator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/uaslp/objetos/list/linkedlist/LinkedListIterador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uaslp/objetos/list/linkedlist/LinkedListIterador.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/uaslp/objetos/list/linkedlist/LinkesList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uaslp/objetos/list/linkedlist/LinkesList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/uaslp/objetos/list/linkedlist/List.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uaslp/objetos/list/linkedlist/List.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uaslp/objetos/list/linkedlist/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uaslp/objetos/list/linkedlist/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uaslp/objetos/list/linkedlist/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uaslp/objetos/list/linkedlist/Node.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +24,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>

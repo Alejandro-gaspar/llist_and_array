@@ -1,15 +1,15 @@
 package uaslp.objetos.list.linkedlist;
 
-public class LinkedListIterador implements Iterator{
-    private Node currentNode;
-    LinkedListIterador(Node head){
+public class LinkedListIterador<T> implements Iterator <T> {
+    private Node<T> currentNode;
+    LinkedListIterador(Node<T> head){
         currentNode=head;
     }
     public boolean hasnext(){
      return currentNode != null;
     }
-    public String next(){
-       String data=currentNode.data;
+    public T next(){
+       T data=currentNode.data;
        currentNode=currentNode.next;
         System.out.println("dato:"+data);
        return data;

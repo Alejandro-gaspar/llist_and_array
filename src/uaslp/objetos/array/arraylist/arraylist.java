@@ -2,21 +2,21 @@ package uaslp.objetos.array.arraylist;
 
 import uaslp.objetos.list.linkedlist.List;
 
-public class arraylist implements List {
+public class arraylist<T> implements List<T> {
     private static  final int Valor_ini =2;
-    private String []array;
+    private Object[]array;
     private int size;
     public arraylist(){
-        array=new String[Valor_ini];
+       Object array=new Object[Valor_ini];
     }
-    public void addAtTails(String data) {
+    public void addAtTails(T data) {
         if (size == array.length){
             increaseSize();
         }
         array[size]=data;
         size++;
     }
-    public void addAtFront(String data){
+    public void addAtFront(T data){
       int i,j;
       for(i=size;i>0;i--){
           array[i]=array[i-1];
@@ -36,30 +36,30 @@ public class arraylist implements List {
     public void removeAll(){
 size=0;
     }
-    public void setat(int index,String data){
+    public void setat(int index,T data){
         if(index> array.length){
             System.out.println("index no valido");
        }else{
         array[index]=data;
        }
     }
-    public String getat(int index){
-        String data =array[index];
+    public T getat(int index){
+        T data =(T)array[index];
         return data;
     }
     public int getSize(){return size;}
     private void increaseSize(){
-        String []newarray=new String[array.length*2];
+        Object []newarray=new Object[array.length*2];
         for(int i=0;i< array.length;i++)
         {
             newarray[i]=array[i];
         }
         array=newarray;
     }
-    public arraylistIterador getIterador(){
-        return new arraylistIterador(this);
+    public arraylistIterador<T> getIterador(){
+        return new arraylistIterador<>(this);
     }
-    public void removeallwithvalue(String data) {
+    public void removeallwithvalue(T data) {
 
     }
 
