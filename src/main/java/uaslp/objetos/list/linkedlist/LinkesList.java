@@ -1,41 +1,59 @@
 package uaslp.objetos.list.linkedlist;
+import java.io.IOException;
+
+import uaslp.objetos.exceptions.BadIndexException;
+import uaslp.objetos.exceptions.CollectionsException;
+import uaslp.objetos.exceptions.NotNullAllowendException;
+
 public class LinkesList<T> implements List<T> {
    private Node<T> head;
    private Node<T> tail;
     private int size;
     int index;
-    public void addAtTails(T data){
-     Node<T> node=new Node();
-     node.data=data;
-     node.previous=tail;
-     if (head == null) {
-      head=node;
-      tail =node;
-     }else{
-      tail.next=node;
-     }
-     tail=node;
-     size++;
-    }
-    public void addAtFront(T data){
-     Node<T> node=new Node();
-     node.data=data;
-     node.previous=null;
-     if(head==null){
-      head=node;
-      tail=node;
+    public void addAtTails(T data)throws NotNullAllowendException {
+     if (data==null){
+      throw new NotNullAllowendException();
      }else {
-      node.next=head;
-      head=node;
+      Node<T> node = new Node();
+      node.data = data;
+      node.previous = tail;
+      if (head == null) {
+       head = node;
+       tail = node;
+      } else {
+       tail.next = node;
+      }
+      tail = node;
+      size++;
      }
     }
-    public void remove(int index) {
-     Node<T> aux = new Node();
-     Node<T> ant = new Node();
+    public void addAtFront(T data)throws NotNullAllowendException{
+     if(data==null){
+      throw new NotNullAllowendException();
+     }else {
+      Node<T> node = new Node();
+      node.data = data;
+      node.previous = null;
+      if (head == null) {
+       head = node;
+       tail = node;
+      } else {
+       node.next = head;
+       head = node;
+      }
+     }
+    }
+    public void remove(int index) throws BadIndexException {
+     if(index<0||index>size){
+      throw new BadIndexException();
+     }
+     Node<T> aux;
+     Node<T> ant;
      int cont=1;
      aux = head;
+     ant=head;
      if (head != null) {
-      while (aux != tail && cont != index) {
+      while (aux.next != tail && cont != index) {
        ant=aux;
        aux = aux.next;
        cont++;
@@ -44,10 +62,13 @@ public class LinkesList<T> implements List<T> {
        if (aux == head) {
         head = aux.next;
        } else {
-        ant.next= aux.next;
-        aux.next.previous = ant;
-        aux.next = aux.previous = null;
-        System.out.println("dato:" + aux.data + " removido");
+        if(aux.next==null){
+         ant.next=null;
+        }else {
+         ant.next= aux.next;
+         aux.next.previous = ant;
+         aux.next = aux.previous = null;
+        }
        }
       }
      }
@@ -57,24 +78,31 @@ head=tail=null;
      Runtime garbage = Runtime.getRuntime();
      garbage.gc();
     }
-    public void setat(int index,T data){
-     Node<T> aux=new Node();
-     aux=head;
-     int cont = 1;
-     if(head!=null) {
-      while (aux != tail && cont!=index) {
-       aux = aux.next;
-       cont++;
+    public void setAt(int index,T data)throws BadIndexException,NotNullAllowendException {
+     if (data == null) {
+      throw new NotNullAllowendException();
+     } else {if(index<0||index>size){
+      throw new BadIndexException();
+     }
+      Node<T> aux = new Node();
+      aux = head;
+      int cont = 1;
+      if (head != null) {
+       while (aux != tail && cont != index) {
+        aux = aux.next;
+        cont++;
+       }
+       if (cont == index) {
+        aux.data = data;
+       }
+       addAtTails(data);
       }
-      if(cont==index){
-       aux.data=data;
-      }else System.out.println("index no valido");
-     }else{
-      addAtTails(data);
-      System.out.println("dato insertado al final");
      }
     }
-    public T getat(int index){
+    public T getat(int index)throws BadIndexException{
+     if(index<0||index>size){
+      throw new BadIndexException();
+     }
      T dat=null;
     if(head!=null){
      Node<T> aux= new Node();
@@ -86,7 +114,6 @@ head=tail=null;
      }
      if(cont==index) {
       dat = aux.data;
-      System.out.println("dato:"+dat+" encontrado");
      }
     }
      return dat;

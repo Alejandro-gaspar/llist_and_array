@@ -1,4 +1,7 @@
 package uaslp.objetos.exceptions;
 
-public class CollectionsException {
+public class CollectionsException extends Exception {
+
+
+
 }

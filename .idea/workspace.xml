@@ -5,15 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="406c22a3-ee1d-4c56-a976-cd30967a01f3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/uaslp/objetos/list/linkedlist/Navigable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uaslp/objetos/array/arraylist/arraylist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uaslp/objetos/array/arraylist/arraylist.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uaslp/objetos/array/arraylist/arraylistIterador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uaslp/objetos/array/arraylist/arraylistIterador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uaslp/objetos/list/linkedlist/Iterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uaslp/objetos/list/linkedlist/Iterator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uaslp/objetos/list/linkedlist/LinkedListIterador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uaslp/objetos/list/linkedlist/LinkedListIterador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uaslp/objetos/list/linkedlist/LinkesList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uaslp/objetos/list/linkedlist/LinkesList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uaslp/objetos/list/linkedlist/List.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uaslp/objetos/list/linkedlist/List.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uaslp/objetos/list/linkedlist/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uaslp/objetos/list/linkedlist/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/listas_tarea5.iml" beforeDir="false" afterPath="$PROJECT_DIR$/listas_tarea5.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Test/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Test/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uaslp/objetos/array/arraylist/ArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uaslp/objetos/array/arraylist/ArrayList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uaslp/objetos/array/arraylist/ArrayListIterador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uaslp/objetos/array/arraylist/ArrayListIterador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uaslp/objetos/array/arraylist/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uaslp/objetos/array/arraylist/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uaslp/objetos/exceptions/BadIndexException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uaslp/objetos/exceptions/BadIndexException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uaslp/objetos/exceptions/CollectionsException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uaslp/objetos/exceptions/CollectionsException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uaslp/objetos/exceptions/NotNullAllowendException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uaslp/objetos/exceptions/NotNullAllowendException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uaslp/objetos/list/linkedlist/LinkesList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uaslp/objetos/list/linkedlist/LinkesList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uaslp/objetos/list/linkedlist/List.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uaslp/objetos/list/linkedlist/List.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uaslp/objetos/list/linkedlist/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uaslp/objetos/list/linkedlist/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,8 +27,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -33,6 +37,13 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
   </component>
   <component name="ProjectId" id="2LNxsqv0BiPuvRzZL9Le7sECiiY" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -48,13 +59,31 @@
     &quot;last_opened_file_path&quot;: &quot;C:/Users/alexv/IdeaProjects/listas_tarea5&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.uaslp.objetos.array.arraylist.Main">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\alexv\IdeaProjects\listas_tarea5\src\Main\Java" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Test.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="uaslp.objetos.list.linkedlist.Main" />
       <module name="listas_tarea5" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="uaslp.objetos.list.linkedlist.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test.Main" />
+      <module name="listas_tarea5" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -77,6 +106,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Test.Main" />
         <item itemvalue="Application.uaslp.objetos.array.arraylist.Main" />
         <item itemvalue="Application.Main" />
       </list>
@@ -92,5 +122,16 @@
       <updated>1675725553558</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Test/Main.java</url>
+          <line>9</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

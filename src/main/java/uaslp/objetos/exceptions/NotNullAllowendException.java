@@ -1,2 +1,4 @@
-package uaslp.objetos.exceptions;public class NotNullAllowendException {
+package uaslp.objetos.exceptions;
+
+public class NotNullAllowendException extends CollectionsException {
 }
