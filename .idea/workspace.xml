@@ -5,19 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="406c22a3-ee1d-4c56-a976-cd30967a01f3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/listas_tarea5.iml" beforeDir="false" afterPath="$PROJECT_DIR$/listas_tarea5.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Test/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Test/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/uaslp/objetos/array/arraylist/ArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uaslp/objetos/array/arraylist/ArrayList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/uaslp/objetos/array/arraylist/ArrayListIterador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uaslp/objetos/array/arraylist/ArrayListIterador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/uaslp/objetos/array/arraylist/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uaslp/objetos/array/arraylist/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/uaslp/objetos/exceptions/BadIndexException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uaslp/objetos/exceptions/BadIndexException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/uaslp/objetos/exceptions/CollectionsException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uaslp/objetos/exceptions/CollectionsException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/uaslp/objetos/exceptions/NotNullAllowendException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uaslp/objetos/exceptions/NotNullAllowendException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/uaslp/objetos/list/linkedlist/LinkesList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uaslp/objetos/list/linkedlist/LinkesList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/uaslp/objetos/list/linkedlist/List.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uaslp/objetos/list/linkedlist/List.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/uaslp/objetos/list/linkedlist/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uaslp/objetos/list/linkedlist/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Test/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Test/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uaslp/objetos/array/arraylist/ArrayList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/uaslp/objetos/array/arraylist/ArrayList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uaslp/objetos/list/linkedlist/LinkesList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/uaslp/objetos/list/linkedlist/LinkesList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uaslp/objetos/list/linkedlist/List.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/uaslp/objetos/list/linkedlist/List.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uaslp/objetos/list/linkedlist/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/uaslp/objetos/list/linkedlist/Main.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

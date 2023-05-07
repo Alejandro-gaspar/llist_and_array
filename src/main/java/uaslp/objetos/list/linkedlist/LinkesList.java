@@ -1,8 +1,5 @@
 package uaslp.objetos.list.linkedlist;
-import java.io.IOException;
-
 import uaslp.objetos.exceptions.BadIndexException;
-import uaslp.objetos.exceptions.CollectionsException;
 import uaslp.objetos.exceptions.NotNullAllowendException;
 
 public class LinkesList<T> implements List<T> {
